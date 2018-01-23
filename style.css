@@ -1,0 +1,472 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    max-height: 10000000px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* This is the end of the CSS reset */
+
+#alohaLogo {
+    padding: 10px;
+}
+
+#shoppingCart {
+    text-align: right;
+    padding-left: 44%;
+}
+
+ul.nav {
+    text-align: center;
+    font-size: 33px;
+    font-family: 'ralewaymedium';
+    padding-top: 15px;
+}
+
+ul.nav li {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e2574c;
+    margin-bottom: 30px;
+    padding: 0 15px;
+   
+}
+
+ul.nav li a {
+     color: inherit;
+    text-decoration: inherit;
+}
+
+.largeType {
+    text-align: center;
+    font-size:80px; 
+    font-family: 'playfair_displayregular';
+    padding-top: 160px;     
+}
+
+.newCollType {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'ralewaymedium';
+    text-transform: uppercase;
+    padding-top: 200px;
+    color:white;
+}
+
+.titleType {
+    text-align: center;
+    font-size:80px; 
+    font-family: 'playfair_displayregular';
+    padding-top: 20px;
+    color: white;     
+}
+
+.shopType{ 
+    text-align: center;
+    font-size: 50px;
+    font-family: 'ralewaymedium';
+    text-transform: uppercase;
+    color: white;
+    padding-top: 230px;
+}
+
+.productType{
+    text-align: center;
+    font-family: 'playfair_displayregular';
+    font-size: 38px;
+    color: #e2574c;
+}
+
+.priceType{
+    text-align: center;
+    font-family: 'playfair_displayregular';
+    font-size: 40px;
+    line-height: 225%;
+    color: #969696;
+}
+
+.categoryType{
+    text-align: center;
+    font-family: 'ralewaymedium';
+    font-size: 30px;
+    color: #969696;
+    text-transform: uppercase;
+    padding-bottom: 26px;
+    padding-top: 140px;
+}
+
+.bodyType {
+    text-align: center;
+    font-size: 38px;
+    color: #2d2d2d;
+    font-family: 'ralewaylight';
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 180px;
+    line-height: 170%;
+}
+
+.container {
+    width: 100%;
+    height: 800px;
+}
+
+#floralBackground {
+    background-image: 
+    url('images/banner-girl.png'),  
+    url('images/flower-bkgd.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    background-size: 35%, 140%;
+    background-position: center center, left top;
+      
+}
+#floralBackground h2{
+    padding-top: 195px;
+    color: white;
+}
+#floralBackground h1{
+    color: white;
+    padding-top: 0;
+}
+
+
+#imgContainers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: pink;
+    width: 100%;
+}
+
+
+.shopContainer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end:2;
+    position: relative;
+}
+
+.trendsContainer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:3;
+     
+    position: relative;
+}  
+
+.glassesContainer{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end:3;
+    position: relative;
+}  
+
+.saleContainer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end:4;
+    position: relative;
+} 
+
+.bagsContainer{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end:4;
+    position: relative;
+} 
+
+.womensContainer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end:5;
+    position: relative;
+} 
+
+#shop {
+    background-image: url('images/mens-category.jpg');
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    
+}
+
+#trends {
+    background-image: url('images/trends-category.jpg');
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    box-sizing: border-box;
+    border: 20px solid white;
+    border-left: none;
+    border-right: 10px solid white;
+
+
+}
+
+#glasses {
+    background-image: url('images/glasses-category.jpg');
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    box-sizing: border-box;
+    border: 20px solid white;
+    border-left: 10px solid white;
+    border-right: none;
+  
+}
+
+
+#sale {
+    background-image: url('images/sale-category.jpg');
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    box-sizing: border-box;
+    border: 20px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: 10px solid white;
+  
+} 
+
+#bags {
+    background-image: url('images/bags-category.jpg');
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    box-sizing: border-box;
+    border: 20px solid white;
+    border-top: none;
+    border-left: 10px solid white;
+    border-right: none;
+
+}
+
+#womens {
+    background-image: url('images/womens-category.jpg');
+    height: 500px;
+    width: 100%;
+    background-position: center;
+}
+
+#products section{
+    text-align: center;
+    width: 80%;
+    height: 80%;
+}
+
+#checkedDress {
+    width: 100%;
+    text-align: center;
+}
+
+#updates {
+    background-image: 
+    url('images/wave-bkgd.jpg');  
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 800px;
+    background-size: 360%;
+}
+#subscribeButton {
+    background: white;
+    height: 80px;
+    width: 80%;
+    border-radius: 45px;
+    margin: 0 auto;
+}
+
+input {
+  border: none;
+  font-family:'ralewaymedium';
+  font-size: 30px;
+  background-color: white;
+  border-radius: 15px;
+  width: 370px;
+  height: 100%;
+  margin-left: 30px;
+}
+
+button {
+  background-color: #e2574c;
+  font-size: 30px;
+  color: white;
+  border-radius: 45px;
+  height: 80%;
+  width:300px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+}
+
+
+.largeTypeM{
+    text-align: center;
+    font-size:80px; 
+    font-family: 'playfair_displayregular';
+    padding-top: 160px;
+    color: white;
+}
+
+.bodyTypeM {
+    text-align: center;
+    font-size: 38px;
+    font-family: 'ralewaylight';
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 180px;
+    line-height: 170%;
+    color: white;
+}
+
+#footerBox {
+    height: 450px;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 30px;
+    border-top: 20px solid white;
+    color: white;
+    background-color: #242424;
+    
+}
+
+.footType {
+    text-align: center;
+    font-family: 'playfair_displayregular';
+    font-size: 34px;
+    line-height: 50px;
+    padding:0;
+    color: white;
+    
+}
+
+.footTypeM {
+    text-align: center;
+    font-family: 'playfair_displayregular';
+    font-size: 34px;
+    line-height: 50px;
+    padding:0;
+    color: #969696;
+}
+
+/* Breakpoint Tablet */
+@media all and (min-width: 600px) {
+    .bodyType {
+        font-size: 42px;
+    }
+
+    /* ------------------------ 
+        grid for tablet
+    ------------------------ */
+    .shopContainer{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end:2;
+        position: relative;
+    }
+
+    .trendsContainer{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end:2;
+        
+        position: relative;
+    }  
+
+    .glassesContainer{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end:2;
+        position: relative;
+    }  
+
+    .saleContainer {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end:3;
+        position: relative;
+    } 
+
+    .bagsContainer{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end:3;
+        position: relative;
+    } 
+
+    .womensContainer{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end:3;
+        position: relative;
+    } 
+
+
+
+}
+
+/* Breakpoint Desktop */
+@media all and (max-width: 1240px) {
+    .bodyType {
+        font-size: 42px;
+}
+}
